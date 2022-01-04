@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="nl">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Include external HTML with W3.js (only works on localhost?)</title>
+
+  <style>
+    header, footer {
+      display: flex;
+      min-height: 200px;
+      background-color: pink;
+      align-items: center;
+      justify-content: center;
+    }
+    section {
+      display: flex;
+      background-color: hotpink;
+      align-items: center;
+      min-height: 40px;
+      justify-content: center;
+    }
+  </style>
+
+</head>
+
+<body>
+
+  <!-- HEADER (INCLUDE) -->
+  <header w3-include-html="includes/tpl-header.html"></header>
+
+  <main>
+   
+    <!-- CONTENT -->
+    <div>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias odit officia vero tempora itaque dolorem id dignissimos sapiente, eius, dolor porro aliquam officiis soluta aspernatur quidem ex sed! Recusandae, delectus!
+      </p>
+      <p>
+        Magnam beatae in fuga eos, id commodi ea ut laudantium quam reprehenderit veritatis odit esse enim? Natus nihil nobis at tenetur illum saepe veniam, debitis consequatur? Corporis nulla rem provident!
+      </p>
+    </div>
+
+    <!-- INCLUDE > TEST -->
+    <section w3-include-html="includes/bn-test.html"></section>
+
+    <!-- CONTENT > TEXT -->
+    <div>
+      <p>
+        Id totam, architecto ullam cum ducimus quibusdam tempora illo, quam necessitatibus culpa impedit labore atque illum! Earum dolor incidunt provident repudiandae facilis pariatur consectetur nisi. Quaerat error omnis aperiam facilis?
+      </p>
+      <p>
+        Ex quidem labore sint dolorum? Repellat, fugit. Est distinctio dolorum modi veniam ullam magnam itaque, nam neque laborum eum omnis, quaerat fugiat commodi sit atque aliquid harum. Saepe, minima asperiores.
+      </p>
+    </div>
+
+    <!-- INCLUDE > TEST -->
+    <section w3-include-html="includes/bn-test.html"></section>
+
+    <!-- CONTENT -->
+    <div>
+      <p>
+        Id commodi ea ut laudantium quam reprehenderit veritatis odit esse enim? Natus nihil nobis at tenetur illum saepe veniam, debitis consequatur? Corporis nulla rem provident! Est distinctio dolorum modi veniam ullam magnam itaque, nam neque laborum eum omnis, quaerat fugiat commodi sit atque aliquid harum. Saepe, minima asperiores.
+      </p>
+    </div>
+
+  </main>
+
+  <!-- FOOTER (INCLUDE) -->
+  <footer w3-include-html="includes/tpl-footer.html"></footer>
+
+  <script src="w3.js"></script>
+  <script>
+    w3.includeHTML();
+
+    /* OTHER SNIPPET I NEED TO ENABLE
+    setTimeout(function () {
+      var element = document.getElementById("tab1");
+      element.classList.add("active");
+    }, 1000)
+    */
+
+  </script>
+
+</body>
+
+</html>
