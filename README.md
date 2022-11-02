@@ -2,4 +2,7 @@
 A collection of code snippets and tests, which can be used in lots of other projects.
 
 ## JavaScript ##
-- Include external HTML with JavaScript (W3 Schools)
+- <a href="javascript/w3js/index.html">Include external HTML with JavaScript (W3 Schools)</a>
+
+## PHP ##
+- Template Includes
