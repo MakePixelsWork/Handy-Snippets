@@ -2,14 +2,14 @@
 <html lang="en">
 
 <head>
-  <?php include 'template/php/includes/document-begin.php';?>
+  <?php include 'includes/document-begin.php';?>
   <title>PHP Template System</title>
 </head>
 
 <body>
 
   <header>
-    <?php include 'template/php/includes/template-header.php';?>
+    <?php include 'includes/template-header.php';?>
   </header>
 
   <main>
@@ -20,10 +20,10 @@
   </main>
 
   <footer>
-    <?php include 'template/php/includes/template-footer.php';?>
+    <?php include 'includes/template-footer.php';?>
   </footer>
 
-<?php include 'template/php/includes/document-end.php';?>
+<?php include 'includes/document-end.php';?>
 
 <script>
   document.getElementById("menu-item3").className += " active";
