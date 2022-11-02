@@ -5,4 +5,4 @@ A collection of code snippets and tests, which can be used in lots of other proj
 - <a href="javascript/w3js/index.html">Include external HTML with JavaScript (W3 Schools)</a>
 
 ## PHP ##
-- Template Includes
+- <a href="php/template-includes/index.php">Template Includes</a>
