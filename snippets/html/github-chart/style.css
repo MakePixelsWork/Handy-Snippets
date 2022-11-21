@@ -2,3 +2,12 @@ img.github-chart {
   width: 100%;
   height: auto;
 }
+
+
+
+/* IF NOT fill:#EEEEEE, THEN */
+/*  How would I go about targetting the colors? The only consistent identifier
+    is the fact that all inactive colors have the grey fill: so you can target
+    all items that have not:fill. Or somthing like it?!
+*/
+
